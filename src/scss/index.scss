@@ -1,4 +1,66 @@
+* {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
 body {
-  color: white;
-  font-size: 22px;
+  margin: 0;
+  background-color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  color: #33;
+}
+
+h1 {
+  font-family: Calibri;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: Calibri;
+  font-size: 24px;
+}
+
+img {
+  max-width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pres {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__prenom {
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+
+  &__nom {
+    font-size: 150px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  &__text {
+    margin: 10px;
+  }
 }

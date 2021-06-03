@@ -1,0 +1,102 @@
+@mixin autolayout($center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  font-family: Montserrat;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #3a393c;
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-top: 25px;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-family: Calibri;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-top: 25px;
+  justify-content: space-between;
+
+  &.titre {
+    text-decoration: underline black solid 5px;
+    text-decoration-color: white;
+  }
+  &.passion {
+    position: absolute;
+    bottom: 0px;
+  }
+  &.img {
+    margin-left: 50px;
+  }
+}
+
+footer {
+  @include autolayout(center);
+  bottom: 0;
+  & .story {
+    border: 1px solid;
+
+    border: conic-gradient(
+      from 182.29deg at 50% 51.92%,
+      #d72b7e 0deg,
+      #dc316f 45.2deg,
+      #f27040 89.25deg,
+      #fad3b0 121.56deg,
+      #f57b36 177.78deg,
+      #db3377 238.48deg,
+      #c63192 294.15deg,
+      #d72b7e 360deg
+    );
+  }
+}
+
+.competence {
+  flex-direction: column;
+  @include autolayout(left);
+  &__design {
+    // justify-content: space-between;
+    @include autolayout(center);
+  }
+}
+
+code {
+  @include autolayout(center);
+  text-align: center;
+}
