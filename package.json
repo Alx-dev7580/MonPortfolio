@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/projet_1annee.html"
+    "dev": "parcel src/contact.html"
   },
   "keywords": [],
   "author": "",

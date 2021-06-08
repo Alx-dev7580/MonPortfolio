@@ -1,0 +1,88 @@
+* {
+  margin: 25px;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    #3a393c;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 20px;
+  color: black;
+  height: 100vh;
+  width: 50vw;
+}
+
+img {
+  max-width: 50%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col1 {
+  display: flex;
+  flex-wrap: wrap;
+  &__titre {
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+}
+
+.col2 {
+  &__pres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__entreprise {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  border-bottom: 5px black solid;
+}
+
+.message {
+  width: 542px;
+  height: 279px;
+  font-size: 24px;
+  background: white;
+  border: 3.5px solid black;
+}
+
+button {
+  width: 164px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  background: #ffffff;
+  border-radius: 25px;
+}
